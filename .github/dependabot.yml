@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"   # what to watch: versions in your workflows
+    directory: "/"                         # where: repo root (.github/workflows)
+    schedule:
+      interval: "weekly"                   # how often it checks
+    target-branch: "dev"                   # its PRs go to dev, like yours
+    commit-message:
+      prefix: "ci"                         # its PR titles start with "ci:"
