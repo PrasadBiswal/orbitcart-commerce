@@ -14,7 +14,7 @@ jobs:
   gitleaks:                         # job name = the check name you'll require in 6b
     runs-on: ubuntu-latest          # a fresh Linux machine from GitHub
     steps:
-      - uses: actions/checkout@v4   # download the repo code
+      - uses: actions/checkout@v7   # download the repo code
         with:
           fetch-depth: 0            # full history, so Gitleaks scans every commit
       - uses: gitleaks/gitleaks-action@v2
